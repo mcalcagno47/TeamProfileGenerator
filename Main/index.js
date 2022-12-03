@@ -1,10 +1,13 @@
+const inquirer = require("inquirer")
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
 const teamMembers = [];
 
+createTeam()
+
 function createManager() {
-    inquire.prompt([{
+    inquirer.prompt([{
         type: 'input',
         name: 'manager name',
         message: 'What is the managers name?',
@@ -39,7 +42,7 @@ function createManager() {
 }
 
 function createTeam() {
-    inquire.prompt([{
+    inquirer.prompt([{
         type: 'list',
         name: 'memberChoice',
         message: 'What team member do you want to add?',
@@ -54,13 +57,15 @@ function createTeam() {
                 case 'Intern':
                     addIntern()
                     break
-                default:
-                    buildTeam()
+                case 'Manager':
+                    createManager()
+                // default:
+                //     buildTeam()
             }
         })
 
     function addEngineer() {
-        inquire.prompt([{
+        inquirer.prompt([{
             type: 'input',
             name: 'engineer name',
             message: 'What is the engineers name?',
@@ -94,7 +99,7 @@ function createTeam() {
     }
 
     function addIntern() {
-        inquire.prompt([{
+        inquirer.prompt([{
             type: 'input',
             name: 'Intern name',
             message: 'What is the Interns name?',
