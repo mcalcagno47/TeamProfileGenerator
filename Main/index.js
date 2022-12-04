@@ -133,3 +133,7 @@ function createTeam() {
             }
         })
 }
+
+function buildTeam () {
+    
+}
