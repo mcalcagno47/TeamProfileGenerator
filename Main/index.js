@@ -4,8 +4,6 @@ const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
 const teamMembers = [];
 
-createTeam()
-
 function createManager() {
     inquirer.prompt([{
         type: 'input',
@@ -59,8 +57,8 @@ function createTeam() {
                     break
                 case 'Manager':
                     createManager()
-                // default:
-                //     buildTeam()
+                default:
+                    buildTeam()
             }
         })
 

@@ -8,7 +8,7 @@ class Employee {
         return this.name
     };
     getID() {
-        return this.ID
+        return this.id
     };
     getEmail() {
         return this.Email
