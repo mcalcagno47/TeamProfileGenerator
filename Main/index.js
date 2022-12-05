@@ -37,7 +37,7 @@ function createManager() {
                 answers.managerOfficeNumber,
             )
             teamMembers.push(manager)
-            buildTeam()
+            createTeam()
         })
 }
 
@@ -71,7 +71,7 @@ function addEngineer() {
                 answers.engineerGithub,
             )
             teamMembers.push(engineer)
-            buildTeam()
+            createTeam()
         })
 }
 
@@ -105,7 +105,7 @@ function addIntern() {
                 answers.internSchool,
             )
             teamMembers.push(intern)
-            buildTeam()
+            createTeam()
         })
 }
 
@@ -114,7 +114,7 @@ function createTeam() {
         type: 'list',
         name: 'memberChoice',
         message: 'What team member do you want to add?',
-        choices: ['Engineer', 'Intern', 'Manager']
+        choices: ['Engineer', 'Intern', 'Manager', 'Finished']
     }])
 
         .then((userChoice) => {
@@ -128,12 +128,10 @@ function createTeam() {
                 case 'Manager':
                     createManager()
                     break
+                case 'Finished':
+                    return
                 default:
-                    buildTeam()
+                    createTeam()
             }
         })
-}
-
-function buildTeam () {
-    
 }
