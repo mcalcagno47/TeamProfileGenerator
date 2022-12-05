@@ -2,7 +2,7 @@
 
 ## Description
 
-
+In this application, the user will have access to their team's data by inputting it into the console.  The information input there will be sent to an HTML document, where the user will be able to quickly reference their team's information.  There are 3 types of employees, Manager, Engineer and Intern, each with a specific set of questions unique to them.  The videos and screenshot below demonstrate this. 
 
 
 ## Table of Contents
@@ -19,20 +19,25 @@ Programs necessary for usage is Node.js, but dependencies must be added for it t
 
 ## Usage
 
-
+If one has correctly downloaded the necessary code and has access to what has been written by me, then open the console and navigate to the main folder.  Input "node index.js", and the questionaire will begin.  The user will be provided with 3 profile options and the opportunity to end the function.  When the user selects either Manager, Engineer or Intern, they will be asked for their name, id and email.  If the manager is selected, an extra option for Office Number will appear.  If engineer is selected, the user will be asked for their github account.  If the Intern is selected, the user will be prompted for the intern's school.  In the end, once the team is complete, the user can select, "Finished," and the program will close.  It is at this point when the HTML document would populate with the information, but I will accomplish that later.  All of these functions can be tested using JEST.
 
 
 ## Screenshot
 ![Screenshot](./Main/assets/TeamProfileGeneratorScreenshot.png)
 
+
 ## Links
-Video demo: ![video](./Main/assets/MINGW64__c_Users_mcalc_Desktop_TeamProfileGenerator_Main%202022-12-04%2018-23-08.mp4)
+Video demo of Application: https://youtu.be/24_S0X4-O1o
+Video demo of Test: https://youtu.be/CqUoftnJtnw 
+Github: https://github.com/mcalcagno47/TeamProfileGenerator  
+
 The site: Not applicable in this situation, as it is running locally
-Github: https://github.com/mcalcagno47/TeamProfileGenerator   
+
 
 ## Credits
 Mark Calcagno
 Marc Calache, tutor
+
 
 ## Future Development
 
